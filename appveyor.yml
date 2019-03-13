@@ -1,0 +1,49 @@
+branches:
+  only:
+    - master
+
+install:
+  - cmd: pip install mkdocs
+
+build_script:
+  - cmd: mkdocs build --config-file mkdocs-au.yml
+  - cmd: mkdocs build --config-file mkdocs-nz.yml
+
+artifacts:
+  - path: posdocsAU
+    name: posdocsAU
+    type: zip
+  - path: posdocsNZ
+    name: posdocsNZ
+    type: zip
+
+deploy:
+  - provider: S3
+    access_key_id: AKIAJIUIKUBZBXHSAR5Q
+    secret_access_key:
+      secure: 3pvBXjsWdGcaxmh5339WyN34ukiKJHyq+lfwxkyd+tfxu/0XgrQDsMfD5Uf44j+h
+    bucket: posdocs.oxipay.com.au
+    region: ap-southeast-2
+    unzip: true
+    set_public: true
+    artifact: posdocsAU
+  - provider: S3
+    access_key_id: AKIAJIUIKUBZBXHSAR5Q
+    secret_access_key:
+      secure: 3pvBXjsWdGcaxmh5339WyN34ukiKJHyq+lfwxkyd+tfxu/0XgrQDsMfD5Uf44j+h
+    bucket: posdocs.oxipay.co.nz
+    region: ap-southeast-2
+    unzip: true
+    set_public: true
+    artifact: posdocsNZ
+
+notifications:
+  - provider: Email
+    to:
+      - michael.hermann@certegy.com.au
+      - devadmin@oxipay.com.au
+      - pit@oxipay.com.au
+  - provider: Slack
+    auth_token:
+      secure: yXpzER0fyDmh7wYR6zrrES+wGzz5010OpUvpb5UPMsQZO12Ag3TaeOjSsZ0tDQQ4WaNoNngsPOPiaYWmsfg3fhJrSyPy240FqSwDdhSPqC0=
+    channel: '#alerts'

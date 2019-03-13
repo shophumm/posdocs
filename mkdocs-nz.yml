@@ -1,0 +1,37 @@
+site_name: Oxipay POS Integration
+site_dir: posdocsNZ
+nav:
+- Home: 'index.md'
+- Ubiquitous Language: 'ubiquitous_language.md'
+- Getting Started: 'getting-started.md'
+- Processes:
+    - Customer Initiated Flow: 'process/customer_initiated_flow.md'
+    - Sales Adjustment: 'process/sales_adjustment.md'
+- API Reference: 
+    - Create Key: 'api/create_key.md'
+    - Invite: 'api/invite.md'
+    - Process Authorisation: 'api/process_authorisation.md'
+    - Send Receipt: 'api/send_receipt.md'
+    - Process Sales Adjustment: 'api/process_sales_adjustment.md'
+    - Process Adjustment Reversal: 'api/process_adjustment_reversal.md'
+- Additional API Information: 
+    - Status Codes: 'api_information/status_codes.md'
+    - API Versioning: 'api_information/api_versioning.md'
+    - Endpoint Locations: 'api_information/endpoint_locations.md'
+    - HTTP Examples: 'api_information/http_examples.md'
+    - Retries & Idempotency: 'api_information/retries_and_idempotency.md'
+- Supported Standards/Protocols: 
+    - Barcode Standards: 'protocols/barcode_standards.md'
+    - Transport Protocols: 'protocols/transport_protocols.md'
+    - Communication Protocols: 'protocols/communication_protocols.md'
+- Security: 
+    - Device Initialisation: 'security/device_initialisation.md'
+    - Signature Generation: 'security/signature_generation.md'
+    - Transport Layer Security: 'security/transport_layer_security.md'
+theme:
+    name: readthedocs
+    custom_dir: 'theme'
+extra_css: [css/jquery.modal.min.css, css/custom.css]
+extra:
+    domain: oxipay.co.nz
+    email: support@oxipay.co.nz
