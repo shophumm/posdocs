@@ -8,7 +8,7 @@ Parameter | Type | length | Description
 ----------|------|--------|------------
 x_pos_transaction_ref | Unicode string | 64 | This is the transaction reference of the adjustment reversal
 x_adjustment_signature | Unicode string | 200 | The original adjustment signature that we are trying to reverse. We are using the Sales Adjustment Signature as we can not rely on the Sales Adjustment to return a result. (e.g. Network Issues)
-x_merchant_id | Unicode string | 10 | Merchant identifier as defined by Humm
+x_merchant_id | Unicode string | 10 | Merchant identifier as defined by **humm**
 x_device_id | Unicode string | 64 | Unique device identifier for the POS terminal
 x_operator_id | Unicode string | 64 | ID of POS/terminal operator
 x_firmware_version | Unicode string | 64 | current firmware version of POS device

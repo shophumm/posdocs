@@ -1,4 +1,4 @@
-Requests to this API should only be made when a temporary value is used as the *x_pos_transaction_ref* in calls to *ProcessAuthorisation*. Humm will store the specified *x_receipt_number*, which it will use for transaction reconciliation in any future requests to *ProcessSalesAdjustment*.
+Requests to this API should only be made when a temporary value is used as the *x_pos_transaction_ref* in calls to *ProcessAuthorisation*. **Humm** will store the specified *x_receipt_number*, which it will use for transaction reconciliation in any future requests to *ProcessSalesAdjustment*.
 
 **Method:** *SendReceipt*
 
@@ -7,7 +7,7 @@ Requests to this API should only be made when a temporary value is used as the *
 Parameter | Type | Length | Description
 ----------|------|--------|------------
 x_pos_transaction_ref | Unicode string | 64 | This must be the same reference used in *ProcessAuthorisation* request.
-x_merchant_id | Unicode string | 10 | Merchant identifier as defined by Humm
+x_merchant_id | Unicode string | 10 | Merchant identifier as defined by **humm**
 x_device_id | Unicode string | 64 | Unique device identifier for the POS terminal
 x_operator_id | Unicode string | 64 | ID of POS/terminal operator
 x_firmware_version | Unicode string | 64 | current firmware version of POS device

@@ -1,4 +1,4 @@
-This endpoint is used to initiate a request that will send an invite to the customer to Login or Register with Humm so that they can get a pre-approval code.
+This endpoint is used to initiate a request that will send an invite to the customer to Login or Register with **humm** so that they can get a pre-approval code.
 
 **Method:** *Invite*
 
@@ -6,7 +6,7 @@ This endpoint is used to initiate a request that will send an invite to the cust
 
 Parameter | Type | length | Description
 ----------|------|--------|------------
-x_merchant_id | Unicode string | 10 | Merchant identifier as defined by Humm
+x_merchant_id | Unicode string | 10 | Merchant identifier as defined by **humm**
 x_mobile | Unicode string | 10 | Customer’s mobile number
 x_purchase_amount | int | 12 | Total purchase amount (in cents)
 x_device_id | Unicode string | 64 | Unique device identifier for the POS terminal
