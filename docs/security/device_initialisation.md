@@ -1,6 +1,6 @@
  <h3>Device Initialisation</h3>
 
-The flow diagram below shows the process of registering/initialising a POS device with Humm.
+The flow diagram below shows the process of registering/initialising a POS device with **humm**.
 
 <img src="/img/flows/device-initialisation.png" alt="Device Initialisation">
 
@@ -12,14 +12,14 @@ Due to the importance of keeping the device-signing-keys out of the wrong hands;
 
 So what is the process for device initialisation?
 
-1. Retailer provisions a new globally-unique-device-ID (GUDID) from the Humm merchant portal.
+1. Retailer provisions a new globally-unique-device-ID (GUDID) from the **humm** merchant portal.
 2. During the setup/initialisation of a new POS terminal; the technician would enter the merchant-ID and the provisioned GUDID, and then perform some action to issue a request to the <a href="/api/create_key/">CreateKey</a> operation. The CreateKey request would be signed with the GUDID.
-3. Humm would return a device-signing-key and flag the GUDID as 'in use' meaning it can ***never*** be used again as a signing-key - essentially the GUDID can only be used as a signing key once.
-4. The POS terminal would securely record the device-signing-key, which will be used to sign all subsequent requests to Humm.
+3. **Humm** would return a device-signing-key and flag the GUDID as 'in use' meaning it can ***never*** be used again as a signing-key - essentially the GUDID can only be used as a signing key once.
+4. The POS terminal would securely record the device-signing-key, which will be used to sign all subsequent requests to **humm**.
 
 Couple additional points to mention:
 
 * GUDIDs should be provisioned on an 'as needed' basis. If a merchant decided to provision say 100 up-front, a malicious current employee with access to this functionality in the merchant portal could potentially use one of the GUDIDs that is not 'in use' to create their own device-signing-key.
 * As mentioned re-initialising a device can be done as often as needed. A new GUDID however, will need to be provisioned for each attempt. 
-* Once the globally-unique-device-ID is used as the device-signing-key for the initial CreateKey operation, not only will the GUDID be invalidated in terms of being able to get used again as a device-signing-key; it will actually never get used again. When a device calls the CreateKey request, it passes through it's own "x_pos_device_id", which would then be used on all subsequent requests, so that Humm can locate the approriate device-signing-key to verify the digital signature.
+* Once the globally-unique-device-ID is used as the device-signing-key for the initial CreateKey operation, not only will the GUDID be invalidated in terms of being able to get used again as a device-signing-key; it will actually never get used again. When a device calls the CreateKey request, it passes through it's own "x_pos_device_id", which would then be used on all subsequent requests, so that **humm** can locate the approriate device-signing-key to verify the digital signature.
 * Once provisioned, a globally-unique-device-ID will expire after 3 days (72 hours) and will not be able to be used as a device-signing-key on the CreateKey operation.

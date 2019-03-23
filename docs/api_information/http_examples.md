@@ -70,7 +70,7 @@ Invite
 
 <code class="post-icon mr">POST</code>**/webapi/v1/Invite**
 
-Initiates a request that will send an invite to the customer to Login or Register with Humm so that they can get a pre-approval code. See <a href="/api/invite/">Invite</a> for more information.
+Initiates a request that will send an invite to the customer to Login or Register with **humm** so that they can get a pre-approval code. See <a href="/api/invite/">Invite</a> for more information.
 
 *Sample JSON request:*
 ```

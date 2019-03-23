@@ -6,7 +6,7 @@ There are 3 unique statuses as follows:
 * **Failed**: When the intent of the request is unsuccessful e.g. a Decline from the *ProcessAuthorisation* API.
 * **Error**: When there is a problem with the request or an unexpected error.
 
-The following table defines statuses, codes, and messages returned by the Humm APIs. The reason for the unique codes is to make life a bit easier for integrators that want to display their own custom messages.
+The following table defines statuses, codes, and messages returned by the **humm** APIs. The reason for the unique codes is to make life a bit easier for integrators that want to display their own custom messages.
 
 Status | Code | API | Message
 ----------|----------|----------|----------
@@ -32,18 +32,18 @@ Failed | FPRA24 | ProcessAuthorisation | The Barcode has been cancelled
 Failed | FPRA99 | ProcessAuthorisation | Declined
 Failed | FPSA01 | ProcessSalesAdjustment | Unable to find the specified POS transaction reference
 Failed | FPSA02 | ProcessSalesAdjustment | This contract has already been completed
-Failed | FPSA03 | ProcessSalesAdjustment | This Humm contract has previously been cancelled and all payments collected have been refunded to the customer
+Failed | FPSA03 | ProcessSalesAdjustment | This **humm** contract has previously been cancelled and all payments collected have been refunded to the customer
 Failed | FPSA04 | ProcessSalesAdjustment | Sales adjustment cannot be processed for this amount
 Failed | FPSA05 | ProcessSalesAdjustment | Unable to process a sales adjustment for this contract. Please contact Merchant Services on [CollectionsPhone] during business hours for further information
-Failed | FPSA06 | ProcessSalesAdjustment | Sales adjustment cannot be processed. Please call Humm Collections on [CollectionsPhone]
+Failed | FPSA06 | ProcessSalesAdjustment | Sales adjustment cannot be processed. Please call **humm** Collections on [CollectionsPhone]
 Failed | FPSA07 | ProcessSalesAdjustment | Sales adjustment cannot be processed at this store
 Failed | FPSA08 | ProcessSalesAdjustment | Sales adjustment cannot be processed for this transaction. Duplicate receipt number found.
 Failed | FPSA09 | ProcessSalesAdjustment | Amount must be greater than 0.
 Failed | FPAR01 | ProcessSalesAdjustmentReversal | Unable to find the specified POS signature
 Failed | FPAR02 | ProcessSalesAdjustmentReversal | This contract has already been completed
-Failed | FPAR03 | ProcessSalesAdjustmentReversal | This Humm contract has previously been cancelled and all payments collected have been refunded to the customer
+Failed | FPAR03 | ProcessSalesAdjustmentReversal | This **humm** contract has previously been cancelled and all payments collected have been refunded to the customer
 Failed | FPAR05 | ProcessSalesAdjustmentReversal | Unable to process a sales adjustment for this contract. Please contact Merchant Services on [CollectionsPhone] during business hours for further information
-Failed | FPAR06 | ProcessSalesAdjustmentReversal | Sales adjustment adjustment cannot be processed. Please call Humm Collections on [CollectionsPhone]
+Failed | FPAR06 | ProcessSalesAdjustmentReversal | Sales adjustment adjustment cannot be processed. Please call **humm** Collections on [CollectionsPhone]
 Failed | FPAR07 | ProcessSalesAdjustmentReversal | Sales adjustment adjustment cannot be processed at this store
 Failed | FPAR08 | ProcessSalesAdjustmentReversal | Sales adjustment adjustment cannot be processed for this transaction. Duplicate signature found.
 Failed | FSER01 | SendReceipt | Unable to find the specified POS transaction reference
