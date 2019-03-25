@@ -51,7 +51,7 @@ Failed | FSER02 | SendReceipt | The specified POS transaction reference is alrea
 Failed | FCRK01 | CreateKey | Device token provided could not be found
 Failed | FCRK02 | CreateKey | Device token provided has already been used
 Error | EVAL01 | * | Validation error
-Error | EVAL02 | ProcessAuthorisation  | Minimum finance amount is $20
+Error | EVAL02 | ProcessAuthorisation  | Minimum finance amount is $1
 Error | EAUT01 | * | Authentication error
 Error | ESIG01 | * | Signature mismatch error
 Error | EISE01 | * | Internal server error

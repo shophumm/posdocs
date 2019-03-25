@@ -14,7 +14,7 @@ x_pre_approval_code | Unicode string | 6, optionally 10 digits when including 61
 purchase_items <code class="optional">optional</code> | String | 200 | A JSON formatted string containing information about the purchase items e.g. <code>{ "PurchaseItems": [ "Item1", "Item2" ] }</code><br/>**Note**: the purchase item array is assigned to a field named "PurchaseItems".
 x_device_id | Unicode string | 64 | Unique device identifier for the POS terminal
 x_operator_id | Unicode string | 64 | ID of POS/terminal operator
-x_firmware_version | Unicode string | 64 | current firmware version of POS device
+x_firmware_version | Unicode string | 64 | Current firmware version of POS device
 tracking_data <code class="optional">optional</code> | Associative array | Max 1000000 | A map that can be populated with additional tracking/state information that will get passed back in the response
 signature | Hex string case-insensitive | 200 | Payload that is signed using HMAC-SHA256 using a device specific key
 
