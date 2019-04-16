@@ -17,9 +17,9 @@ So what is the process for device initialisation?
 3. **Humm** would return a device-signing-key and flag the GUDID as 'in use' meaning it can ***never*** be used again as a signing-key - essentially the GUDID can only be used as a signing key once.
 4. The POS terminal would securely record the device-signing-key, which will be used to sign all subsequent requests to **humm**.
 
-Couple additional points to mention:
+Couple of additional points to mention:
 
-* GUDIDs should be provisioned on an 'as needed' basis. If a merchant decided to provision say 100 up-front, a malicious current employee with access to this functionality in the merchant portal could potentially use one of the GUDIDs that is not 'in use' to create their own device-signing-key.
+* GUDIDs should be provisioned on an 'as needed' basis. If a merchant decided to provision 100 up-front, a malicious current employee with access to this functionality in the merchant portal could potentially use one of the GUDIDs that is not 'in use' to create their own device-signing-key.
 * As mentioned re-initialising a device can be done as often as needed. A new GUDID however, will need to be provisioned for each attempt. 
 * Once the globally-unique-device-ID is used as the device-signing-key for the initial CreateKey operation, not only will the GUDID be invalidated in terms of being able to get used again as a device-signing-key; it will actually never get used again. When a device calls the CreateKey request, it passes through it's own "x_pos_device_id", which would then be used on all subsequent requests, so that **humm** can locate the approriate device-signing-key to verify the digital signature.
 * Once provisioned, a globally-unique-device-ID will expire after 3 days (72 hours) and will not be able to be used as a device-signing-key on the CreateKey operation.

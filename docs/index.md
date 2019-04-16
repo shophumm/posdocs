@@ -9,7 +9,7 @@ If you're trying to integrate your e-commerce platform, please visit <a href="ht
 This site provides information on how to integrate a POS system with **humm**. Among other things, you will find information about the following:
 
 * **High-level process flows**
-* **API references** - details about the **humm** APIs used for POS transactions and device setup as well as information about some dummy endpoints to help with integration
+* **API references** - details about the **humm** API used for POS transactions and device setup as well as information about some dummy endpoints to help with integration
 * **Message and transport protocols**
 * **Security** - information about how to sign your requests in order to protect against malicious attacks
 

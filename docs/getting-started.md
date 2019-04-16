@@ -16,10 +16,11 @@ In order to implement this you will need to:
 3. *Initialise the POS device*
    
 
-## Setup a Customer
+# Setup a Customer
 
-1. Create an **humm** customer account in the [Customer Portal](https://integration-buyer.%domain%/customerarea#/login)
-2. Click "Shop Instore" to generate a barcode
+1. Generate a test barcode [here](https://integration-cart.shophumm.com.au/barcode) using a test customer account
+
+If you do not have a test customer account please contact <a href="mailto:%email%">%email%</a>
 
 
 

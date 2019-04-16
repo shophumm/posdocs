@@ -11,7 +11,7 @@ x_adjustment_signature | Unicode string | 200 | The original adjustment signatur
 x_merchant_id | Unicode string | 10 | Merchant identifier as defined by **humm**
 x_device_id | Unicode string | 64 | Unique device identifier for the POS terminal
 x_operator_id | Unicode string | 64 | ID of POS/terminal operator
-x_firmware_version | Unicode string | 64 | current firmware version of POS device
+x_firmware_version | Unicode string | 64 | Current firmware version of POS device
 tracking_data <code class="optional">optional</code> | Associative array | Max 1000000 | A map that can be populated with additional tracking/state information that will get passed back in the response
 signature | Hex string case-insensitive | 200 | Payload that is signed using HMAC-SHA256 using a device specific key
 
