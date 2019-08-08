@@ -11,17 +11,6 @@ In order to implement this you will need to:
 
 # Initialise the POS terminal / device
 
-1. Login to the [Seller Portal](https://integration-seller.%domain%) using your Merchant Id and Password: 
-2. You will need to generate a POS Device Token from the Menu.
+1. Login to the [Seller Portal](https://seller.%domain%) using your Merchant Id and Password: 
+2. You will need to generate a POS Device Token from the Menu. If this option is not available please contact %emailLink%
 3. *Initialise the POS device*
-   
-
-# Setup a Customer
-
-1. Generate a test barcode [here](https://integration-cart.shophumm.com.au/barcode) using a test customer account
-
-If you do not have a test customer account please contact <a href="mailto:%email%">%email%</a>
-
-
-
-
