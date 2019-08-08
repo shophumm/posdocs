@@ -27,7 +27,7 @@ signature | Hex string case-insensitive | Payload that is signed using HMAC-SHA2
 
 <h3>Testing</h3>
 
-The following describes dummy API requests that return a predictable response. Please contact <a href="mailto:%email%">%email%</a> to get access to the test/dummy APIs.
+The following describes dummy API requests that return a predictable response. Please contact %emailLink% to get access to the test/dummy APIs.
 
 Request -> x_receipt_number | Response -> x_status | Response -> x_code
 -----------|-----------|-----------

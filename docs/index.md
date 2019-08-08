@@ -13,4 +13,4 @@ This site provides information on how to integrate a POS system with **humm**. A
 * **Message and transport protocols**
 * **Security** - information about how to sign your requests in order to protect against malicious attacks
 
-If you've got any questions in regards to integration that aren't covered on this site; please contact <a href="mailto:%email%">%email%</a>.
+If you've got any questions in regards to integration that aren't covered on this site; please contact %emailLink%.
