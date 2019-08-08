@@ -11,7 +11,7 @@ In order to implement this you will need to:
 
 # Initialise the POS terminal / device
 
-1. Login to the [Seller Portal](https://integration-seller.%domain%/merchantarea#/login) using your Merchant Id and Password: 
+1. Login to the [Seller Portal](https://integration-seller.%domain%) using your Merchant Id and Password: 
 2. You will need to generate a POS Device Token from the Menu.
 3. *Initialise the POS device*
    
