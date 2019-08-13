@@ -1,4 +1,73 @@
 /* --------------------------- */
+/*  POSdocs to docs re-direct  */
+/* --------------------------- */
+
+
+
+#redirect-text h1 span {
+  font-family: Lato,proxima-nova,Helvetica Neue,Arial,sans-serif !important;
+  color: #FF6C00;
+  font-weight: bold;
+}
+
+#redirect-text h1 {
+  color: black !important;
+  font-weight: 300;
+}
+
+.rst-content hr {
+  display: none;
+}
+
+#redirect-text {
+  padding-top: 5rem;
+  padding-bottom: 15rem;
+}
+
+#redirect-text h1 > span {
+  font-size: 2.2rem;
+}
+
+#redirect-text p {
+  font-size: 1.5rem;
+}
+
+.wy-menu.wy-menu-vertical {
+  display: none;
+}
+
+.wy-side-nav-search div {
+  display: none;
+}
+
+.rst-versions {
+  display: none;
+}
+
+footer {
+  display: none;
+}
+
+.wy-breadcrumbs {
+  display: none;
+}
+
+.wy-nav-side, .wy-side-nav-search {
+  height: 100%;
+}
+
+.fa.fa-bars {
+  display: none;
+}
+
+html, html body {
+  height: 100%;
+}
+.wy-nav-content-wrap { /* If #page is a lvl 1 child of body, this should work */
+  height: 100%;
+}
+
+/* --------------------------- */
 /*  humm Rebranding Changes  */
 /* --------------------------- */
 .wy-nav-side {
