@@ -1,4 +1,4 @@
-<meta http-equiv="refresh" content="5;url=https://docs.shophumm.com.au/" />
+<meta http-equiv="refresh" content="5;url=https://docs.shophumm.com.au/pos/getting-started/" />
 
 <div id="redirect-text" style="text-align:center">
     <h1><span>posdocs</span> moved to <span>docs.shophumm.com.au</span></h1>
