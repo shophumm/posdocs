@@ -24,6 +24,12 @@
   padding-bottom: 15rem;
 }
 
+/* resolves issue with sidebar 
+scrollbar displayed on initial load */
+.wy-nav-side.stickynav {
+  overflow:hidden;
+}
+
 #redirect-text h1 > span {
   font-size: 2.2rem;
 }
