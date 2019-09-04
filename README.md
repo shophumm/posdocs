@@ -1,5 +1,11 @@
 # posdocs [![Build status](https://ci.appveyor.com/api/projects/status/qrk2obnd8crqy271/branch/master?svg=true)](https://ci.appveyor.com/project/oxipay/posdocs/branch/master)
 
+## Update August 2019
+Posdocs has since been moved to docs.shophumm.com.au. All posdocs pages have been backed up to *docs_backup_pages*. If attempting to setup a dedicated posdocs site:
+
+1 - Delete the directory *docs*
+2 - Rename the directory *docs_backup_pages* to *docs*
+
 ## Setting up your environment
 
 To get your mkdocs environment configured; install the following:
