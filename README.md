@@ -4,6 +4,7 @@
 Posdocs has since been moved to docs.shophumm.com.au. All posdocs pages have been backed up to *docs_backup_pages*. If attempting to setup a dedicated posdocs site:
 
 1 - Delete the directory *docs*
+
 2 - Rename the directory *docs_backup_pages* to *docs*
 
 ## Setting up your environment
