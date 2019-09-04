@@ -1,15 +1,22 @@
-<h3>Ubiquitous Language</h3>
+<meta http-equiv="refresh" content="5;url=https://docs.shophumm.com.au/pos/getting-started/" />
 
-The following table defines some **humm** related terminology:
+<div id="redirect-text" style="text-align:center">
+    <h1><span>posdocs</span> moved to <span>docs.shophumm.com.au</span></h1>
+    <p>You will be re-directed in <span id="countdown">5</span> seconds ...</p>
+</div>
 
-Term | Description
-----------|----------
-POS | Point of sale. When used in a sentence, we're generally referring to a POS *system*
-POI | Point of interaction
-Customer | A buyer
-Merchant | A retailer/seller
-Pre-authorisation | The process of determining if someone is eligible to use **humm** and their finance limit
-Authorisation | The process of determining if someone can get finance approval with **humm** for the purchase amount
-Sales Adjustment | Full or partial refund of a **humm** purchase
-GUDID | Globablly unique device ID
-128B | Code 128 code set B barcode symbology
+<script language="javascript">
+var max_time = 5;
+var cinterval;
+ 
+function countdown_timer(){
+  // decrease timer
+  max_time--;
+  document.getElementById('countdown').innerHTML = max_time;
+  if(max_time == 0){
+    clearInterval(cinterval);
+  }
+}
+// 1,000 means 1 second.
+cinterval = setInterval('countdown_timer()', 1000);
+</script>
